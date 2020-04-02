@@ -1,0 +1,28 @@
+title: Site
+preset: pages
+unlisted: true
+
+
+fields:
+  movies:
+    label: Movies
+    type: structure
+    fields:
+      title:
+        label: Title
+        type: text
+      published:
+        label: Publish Date
+        type: date
+      category:
+       label: Category
+       type: select
+       options:
+        youtube: Youtube
+        vimeo: Vimeo
+        jitsi: Jitsi
+      url:
+        label: URL
+        type: text
+    
+   

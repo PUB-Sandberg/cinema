@@ -1,0 +1,29 @@
+Title: Cinema
+
+----
+
+Movies:
+
+- 
+  title: test
+  published: 2020-04-18
+  category: youtube
+  url: test 3
+  date: test 2
+  zip: test
+  city: test
+
+----
+
+Addresses:
+
+- 
+  title: hello
+  zip: test
+  city: test
+  street: test
+- 
+  title: hello
+  zip: test2
+  city: test2
+  street: test
