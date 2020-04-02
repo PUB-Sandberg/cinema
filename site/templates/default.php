@@ -1,4 +1,16 @@
 
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="<?= $site->description() ?>">
+  <meta name="keywords" content="<?= $site->keywords() ?>">
+  <title>
+    <?= $page->title() ?> | <?= $site->title() ?>
+  </title>
+  <link rel="stylesheet" type="text/css" href="assets/css/app.css">
+</head>
+<body>
+
 <div class="stage">
 <?php 
 // using the `toStructure()` method, we create a structure collection
@@ -36,4 +48,7 @@ foreach ($items as $item): ?>
   <h2><?= $item->date()->html() ?></h2>
 <?php endforeach ?>
 </div>
+
+</body>
+</html>
 
