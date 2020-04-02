@@ -7,11 +7,18 @@ Movies:
 - 
   title: test
   published: 2020-04-18
+  time: 18:00
   category: youtube
   url: test 3
   date: test 2
   zip: test
   city: test
+- 
+  title: Video 2
+  published: 2020-04-02
+  time: 05:30
+  category: vimeo
+  url: www.de
 
 ----
 

@@ -14,6 +14,9 @@ fields:
       published:
         label: Publish Date
         type: date
+      time:
+        label: Time
+        type: time
       category:
        label: Category
        type: select

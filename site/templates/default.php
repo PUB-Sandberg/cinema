@@ -25,30 +25,54 @@ foreach ($items as $item): ?>
 <?php endif ?>
 
 <?php  if ($item->category() == 'youtube') : ?>
-    hello 
+  <div  class="iframe-wrapper">
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/5qap5aO4i9A?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 <?php endif ?>
 
 <?php  if ($item->category() == 'jitsi') : ?>
-    hello 
+    jitsi
 <?php endif ?>
   <h2><?= $item->title()->html() ?></h2>
   <h2><?= $item->url()->html() ?></h2>
-  <h2><?= $item->date()->html() ?></h2>
+  <h2><?= $item->published()->toDate('Y-m-d') ?></h2>
 <?php endforeach ?>
 </div>
 
 
 <div class="timeline">
+
 <?php 
+
 // using the `toStructure()` method, we create a structure collection
 $items = $site->movies()->toStructure();
 // we can then loop through the entries and render the individual fields
 foreach ($items as $item): ?>
-  <h2><?= $item->title()->html() ?></h2>
-  <h2><?= $item->date()->html() ?></h2>
+<?php 
+$today = date("Y-m-d");
+$choosendate = $item->published()->toDate('Y-m-d');
+?>
+
+
+<div class="timeline__item">
+  <div class="timeline__item__headline"><?= $item->title()->html() ?></div>
+  <div class="timeline__item__date">
+    <span><?= $item->published()->toDate('d.m.Y') ?></span>
+
+    <?php  if ($today == $choosendate) { ?>
+today
+<?php } ?>
+
+    <span><?= $item->time()->toDate('g:i a'); ?><span>
+  </div>
+  </div>
 <?php endforeach ?>
 </div>
 
+<?= js([
+  'assets/js/jquery.js',
+  'assets/js/app.js',
+]) ?>
 </body>
 </html>
 
