@@ -16,6 +16,7 @@ fields:
         type: date
       time:
         label: Time
+        time: false
         type: time
       category:
        label: Category
@@ -24,8 +25,10 @@ fields:
         youtube: Youtube
         vimeo: Vimeo
         jitsi: Jitsi
+      info:
+        text: For Youtube and Vimeo enter the ID of the video. For Jitsi enter the full url like https://meet.jit.si/testthings.
       url:
-        label: URL
+        label: ID or URL 
         type: text
     
    

@@ -1,0 +1,110 @@
+{
+  "particles": {
+    "number": {
+      "value": 361,
+      "density": {
+        "enable": true,
+        "value_area": 6333.477640418815
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "image",
+      "stroke": {
+        "width": 9,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 7
+      },
+      "image": {
+        "src": "http://www.pngplay.com/wp-content/uploads/2/Popcorn-Free-PNG.png",
+        "width": 300,
+        "height": 300
+      }
+    },
+    "opacity": {
+      "value": 0.48102361825965684,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 312.66535186877695,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 260.79854800594439,
+        "size_min": 45.47632388887533,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": false,
+      "distance": 112.2388442605866,
+      "color": "#ffffff",
+      "opacity": 0.12025590456491421,
+      "width": 1.9240944730386271
+    },
+    "move": {
+      "enable": true,
+      "speed": 30.206824121731046,
+      "direction": "right",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 801.7060304327614
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "bubble"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "repulse"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+}
